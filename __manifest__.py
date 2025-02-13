@@ -1,0 +1,26 @@
+{
+    'name': 'Base Quick Create(Customer/Suppiler/Product)',
+    'version': '1.0',
+    'summary': 'Base Quick Create',
+    'category': 'sale,purchase,stock,account,crm',
+    'website': 'Wai Phyoe Oo',
+    'depends': [
+        'base',
+        'sale',
+        'purchase',
+        'stock',
+        'account',
+        'crm',
+    ],
+    'data': [
+        'views/sale_from_inherit_view.xml',
+        'views/purchase_form_inherit_view.xml',
+        'views/crm_form_inherit_view.xml',
+        'views/stock_from_inherit_view.xml',
+        'views/account_form_inherit_view.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

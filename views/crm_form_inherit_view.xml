@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_crm_form_view_inherit" model="ir.ui.view">
+            <field name="name">crm.lead.form.view.inherit</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group/group[@name='lead_partner']/field[@name='partner_id']"
+                       position="attributes">
+                    <attribute name="options">{'no_create':True}</attribute>
+                </xpath>
+                <xpath expr="//sheet/group/group[@name='opportunity_partner']/field[@name='partner_id']"
+                       position="attributes">
+                    <attribute name="options">{'no_create':True}</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
