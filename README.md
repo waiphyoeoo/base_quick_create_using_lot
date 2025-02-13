@@ -5,7 +5,7 @@ This module works quick create and edit by Customer/Suppiler/Product
 
 ## Installation
 
-Install my-project with npm
+Install my-project
 
 ```bash
   install odoo version enterprise 15
